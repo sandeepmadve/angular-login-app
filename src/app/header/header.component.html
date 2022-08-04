@@ -1,0 +1,18 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark px-4" >
+        <div>
+            <a href="/" class="navbar-brand">Auth & Auth</a>
+        </div>
+        <ul class="navbar-nav">
+            <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/" class="nav-link">Home</a></li>
+            <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/addCustomers" class="nav-link">Feature1</a></li>
+            <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/addCustomers" class="nav-link">Feature1</a></li>
+            <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/addCustomers" class="nav-link">Feature1</a></li>
+        </ul>
+        <div class="spacer"></div>
+        <ul class="navbar-nav">
+            <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">LogIn</a></li>
+            <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a></li>
+        </ul>
+    </nav>
+</header>
